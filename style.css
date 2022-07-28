@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 body{
@@ -57,4 +59,28 @@ nav ul li a::after{
 
 nav ul li a:hover::after{
     width: 100%;
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 25px;
+}
+
+.header-text h1{
+    font-size: 45px;
+    margin-top: 5px;
+    margin-left: -3px;
+}
+
+.header-text h1 span{
+    color: #ff004f;
+}
+
+.text-type{
+    font-size: 25px;
+    margin: 5px 0;
+}
+
+.text-type span{
+    color: #ff004f;
 }
