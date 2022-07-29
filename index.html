@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atharva Maheshwari - Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ac32954fd5.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- home section -->
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/logo.png" alt="logo" class="logo">
+                <img src="images/pf_logo.png" alt="logo" class="logo">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -28,6 +29,7 @@
             <div class="text-type">And I'm a <span class="typing"></span></div>
         </div>
     </div>
+
     <!-- About section -->
     <div id="about">
         <div class="container">
@@ -36,13 +38,13 @@
                     <img src="images/user.png" alt="user">
                 </div>
                 <div class="about-col2">
-                    <h1 class="sub-title">About Me</h1>
+                    <h1 class="sub-title">About <span>Me</span></h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates pariatur reiciendis doloremque exercitationem magni laudantium nostrum quis non nam, iste eius maiores velit quo quod corrupti qui nemo ipsa fuga!</p>
 
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab(skills)">Skills</p>
-                        <p class="tab-links" onclick="opentab(experience)">Experience</p>
-                        <p class="tab-links" onclick="opentab(education)">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
@@ -70,6 +72,34 @@
         </div>
     </div>
 
+    <!-- Projects section -->
+    <div id="projects" class="proj">
+        <div class="container">
+            <h1 class="sub-title"><span>My</span> Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-brands fa-stack-overflow"></i>
+                    <h2>Stack Overflow Clone</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, iusto magnam! Cumque a in iste. Repellendus culpa quibusdam, aperiam dolores accusantium adipisci dolore cupiditate eaque veritatis id libero accusamus sunt?</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Basic Project</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, iusto magnam! Cumque a in iste. Repellendus culpa quibusdam, aperiam dolores accusantium adipisci dolore cupiditate eaque veritatis id libero accusamus sunt?</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cube"></i>
+                    <h2>Portfolio Website</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, iusto magnam! Cumque a in iste. Repellendus culpa quibusdam, aperiam dolores accusantium adipisci dolore cupiditate eaque veritatis id libero accusamus sunt?</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
 <script>
     var tablinks=document.getElementsByClassName("tab-links")
     var tabcontents=document.getElementsByClassName("tab-contents")
