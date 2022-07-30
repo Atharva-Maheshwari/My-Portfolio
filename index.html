@@ -44,7 +44,6 @@
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
@@ -60,44 +59,75 @@
                             <li><span>Web Devlopment</span><br>Building Android/iOS Apps</li>
                         </ul>
                     </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>UI?UX</span><br>Designing Web/App Interface</li>
-                            <li><span>Web Devlopment</span><br>Web App Development</li>
-                            <li><span>Web Devlopment</span><br>Building Android/iOS Apps</li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Projects section -->
-    <div id="projects" class="proj">
+    <div id="projects">
         <div class="container">
             <h1 class="sub-title"><span>My</span> Projects</h1>
             <div class="projects-list">
-                <div>
-                    <i class="fa-brands fa-stack-overflow"></i>
-                    <h2>Stack Overflow Clone</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, iusto magnam! Cumque a in iste. Repellendus culpa quibusdam, aperiam dolores accusantium adipisci dolore cupiditate eaque veritatis id libero accusamus sunt?</p>
-                    <a href="#">Learn More</a>
+                <div class="project">
+                    <img src="images/work-1.png" alt="img">
+                    <div class="layer">
+                        <i class="fa-brands fa-stack-overflow one"></i>
+                        <h2>Stack Overflow Clone</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, iusto magnam! Cumque a in iste. Repellendus culpa quibusdam, aperiam dolores accusantium adipisci dolore cupiditate eaque veritatis id libero accusamus sunt?</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Basic Project</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, iusto magnam! Cumque a in iste. Repellendus culpa quibusdam, aperiam dolores accusantium adipisci dolore cupiditate eaque veritatis id libero accusamus sunt?</p>
-                    <a href="#">Learn More</a>
+                <div class="project">
+                    <img src="images/work-2.png" alt="img">
+                    <div class="layer">
+                        <i class="fa-solid fa-code one"></i>
+                        <h2>Basic Project</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, iusto magnam! Cumque a in iste. Repellendus culpa quibusdam, aperiam dolores accusantium adipisci dolore cupiditate eaque veritatis id libero accusamus sunt?</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
-                <div>
-                    <i class="fa-solid fa-cube"></i>
-                    <h2>Portfolio Website</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, iusto magnam! Cumque a in iste. Repellendus culpa quibusdam, aperiam dolores accusantium adipisci dolore cupiditate eaque veritatis id libero accusamus sunt?</p>
-                    <a href="#">Learn More</a>
+                <div class="project">
+                    <img src="images/work-3.png" alt="img">
+                    <div class="layer">
+                        <i class="fa-solid fa-cube one"></i>
+                        <h2>Portfolio Website</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, iusto magnam! Cumque a in iste. Repellendus culpa quibusdam, aperiam dolores accusantium adipisci dolore cupiditate eaque veritatis id libero accusamus sunt?</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    
+    <!-- Contact section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact <span>Me</span></h1>
+                    <p>contact@example.com</p>
+                    <p>0123456789</p>
+                    <div class="socia-icons">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/atharva-maheshwari/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a> 
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="emal" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message or Query"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
+
 
     <!-- Scripts -->
 <script>
