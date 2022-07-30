@@ -7,6 +7,13 @@
     <title>Atharva Maheshwari - Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/ac32954fd5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
 </head>
 <body>
     <!-- home section -->
@@ -26,9 +33,10 @@
             </nav>
             <div class="header-text">
                 Hello, My name is
-                <h1><span>Atharva</span> Maheshwari</h1>
+                <h1>Atharva Maheshwari</h1>
             </div>
             <div class="text-type">And I'm a <span class="typing"></span></div>
+            <a href="#" class="btn1">Hire Me</a>
         </div>
     </div>
 
@@ -136,51 +144,9 @@
     </div>
 
 
-    <!-- Scripts -->
-<script>
-    var tablinks=document.getElementsByClassName("tab-links")
-    var tabcontents=document.getElementsByClassName("tab-contents")
+<!-- Scripts -->
 
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
-
-<script>
-
-    var side = document.getElementById("sidemenu");
-    function openmenu(){
-        side.style.right = "0";
-    }
-    function closemenu(){
-        side.style.right = "-200px";
-    }
-</script>
-
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzSakJHaQUaPNprLJ3gAIOK1jSomMkLEVNybZt__9IjWMjANB1X-3RkV4wR95iZ_oD7/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {msg.innerHTML = "Message Sent Successfully"
-            setTimeout(function(){
-                msg.innerHTML = " "
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+<script src="index.js"></script>
 
 </body>
 </html>
