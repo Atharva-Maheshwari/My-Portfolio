@@ -5,7 +5,6 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-
 html{
     scroll-behavior: smooth;
 }
@@ -13,6 +12,7 @@ body{
     background-color: black;
     color: white;
 }
+
 /*-- home section --*/
 #header{
     width: 100%;
@@ -35,18 +35,19 @@ body{
     padding: 10px 10%;
 }
 
-/* .navbar{
+.navbar{
     position: fixed;
     width: 100%;
+    top: 0;
+    left: 0;
     z-index: 999;
-    padding: 30px 0;
-    font-family: 'Ubuntu', sans-serif;
+    padding: 30px 20px;
     transition: all 0.3s ease;
 }
 .navbar.sticky{
-    padding: 15px 0;
-    background: crimson;
-} */
+    padding: 10px 20px 5px 20px;
+    background: rgb(21,21,21);
+}
 
 nav{
     display: flex;
@@ -187,9 +188,19 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 
-.tab-contents ul li span{
+.tab-contents ul li h5{
     color: #b54;
+
+    margin-bottom: 10px;
+}
+
+.tab-contents ul li span{
+    display: inline-block;
     font-size: 14px;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px 5px 5px 0;
 }
 
 .tab-contents{
@@ -384,7 +395,7 @@ nav .fa-solid{
     display: none;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 999px){
     #header{
         background-image: url(images/pf_bg_phone.png);
     }

@@ -1,10 +1,19 @@
 $(document).ready(function(){
     var typed = new Typed(".typing", {
-        strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
+        strings: ["Developer", "Competitive Programmer", "Freelancer", "Designer",],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
+
+    $(window).scroll(function(){
+        // sticky navbar on scroll script
+        if(this.scrollY > 20){
+            $('.navbar').addClass("sticky");
+        }else{
+            $('.navbar').removeClass("sticky");
+        }
+    })    
 });
 
     var tablinks=document.getElementsByClassName("tab-links")
