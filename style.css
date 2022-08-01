@@ -140,6 +140,10 @@ nav ul li a:hover::after{
     font-size: 20px;
     flex-basis: 60%;    
 }
+.about-col2 p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
 
 .sub-title{
     font-family: 'Raleway', sans-serif;
@@ -294,7 +298,7 @@ nav ul li a:hover::after{
 .btn1{
     display: inline-block;
     background: rgba(0, 0, 0, 0.6);
-    margin: 50px auto;
+    margin: 30px auto;
     width: fit-content;
     border: 1px solid #ff004f;
     padding: 14px 50px;
