@@ -226,14 +226,14 @@ nav ul li a:hover::after{
 
 /*-- project section --*/
 #projects{
-    padding: 50px 0;
+    padding: 50px 0 20px 0;
 }
 
 .projects-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .project{
@@ -324,6 +324,43 @@ nav ul li a:hover::after{
     background: #ff004f;
 }
 
+/*-- Education section --*/
+#education{
+    padding: 50px 0 60px 0; 
+}
+
+.edu{
+    justify-content: space-around;
+    width: 30vw;
+    padding: 10px;
+    margin: 30px 0;
+    border: 2px solid #ff004f;
+    border-radius: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0.3));
+    transition: transform 0.5s;
+}
+
+.edu:hover{
+    transform: translateY(-10px);
+}
+
+.edu-title{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.edu-title h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.edu-content{
+    padding: 10px;
+    font-size: 16px;
+}
+
 /*-- contact section --*/
 .contact-left{
     flex-basis: 35%;
@@ -335,7 +372,15 @@ nav ul li a:hover::after{
 
 .contact-left p{
     margin-top: 30px;
+}
 
+.contact-left p a{
+    color: white;
+    text-decoration: none;
+}
+
+.contact-left p a:hover{
+    color: #ff004f;
 }
 
 .contact-left p i{
