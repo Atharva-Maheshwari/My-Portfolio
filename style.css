@@ -513,6 +513,9 @@ nav .fa-solid{
     .layer p{
         font-size: 14px;
     }
+    .edu{
+        width: auto;
+    }
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
