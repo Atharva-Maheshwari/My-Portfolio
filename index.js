@@ -38,7 +38,7 @@ $(document).ready(function(){
         side.style.right = "-200px";
     }
 
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzSakJHaQUaPNprLJ3gAIOK1jSomMkLEVNybZt__9IjWMjANB1X-3RkV4wR95iZ_oD7/exec'
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbytB6xKW9iubcDj6EPVN5RsbZ2ryRoIOaNhqSoiYxKA4EdzrmFNwZWWVOulxmfdY9Au/exec'
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById("msg")
 
